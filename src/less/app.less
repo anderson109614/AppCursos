@@ -4,10 +4,10 @@
 
 .pad{
     
-        padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
       
 }
 
@@ -29,3 +29,49 @@
         /* display: none;*/
       }
 /////////////////////////////////////
+#progressbar {
+        background-color: black;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 3px;
+        width: 100%;
+      }
+      
+      #progressbar>div {
+        background-color: orange;
+        box-shadow: 2px 2px 5px  orange;
+        width: 0%;
+        /* Adjust with JavaScript */
+        height: 10px;
+        border-radius: 5px;
+      }
+.centradoPorcentual{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+ 
+        
+        font-size:1.5em;
+        color:#228DFF;
+        font-family:Iceland;
+}
+
+.centradoPorcentual:hover{
+        -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+        animation: neon2 1.5s ease-in-out infinite alternate;
+}
+.neon{
+        font-size: 50px; 
+letter-spacing:-2px; 
+color: orange; 
+text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 25px orange; 
+-webkit-text-fill-color: orange; 
+-webkit-text-stroke-color:orange; 
+-webkit-text-stroke-width:0.2px; 
+-moz-text-fill-color: orange; 
+-moz-text-stroke-color:orange; 
+-moz-text-stroke-width:0.2px; 
+}

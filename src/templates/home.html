@@ -1,29 +1,23 @@
-<div class="scrollable ng-scope">
+<div class="scrollable ng-scope" style="background-color: white;">
   <div class="scrollable-content">
     <div class="list-group text-center">
-      <div class="list-group-item list-group-item-home">
-        <img src="./images/head.jpg" width="100%" alt="">
-        <h1></h1>
-      </div>
+      
       <div class="list-group-item list-group-item-home">
           <!--Cursos-->
+          <img src="./images/head.jpg" width="100%" alt="">
            <ul class="list-group text-center">
+
                     <li ng-repeat="curso in cursos | filter:nombre" class="list-group-item list-group-item-home">
-                      <a href="#!detalleCurso/{{curso.id}}">
-                      <!--
-                        <br>
-                        <img src="{{curso.img}}" alt="{{curso.nombre}}" class="card-img-top" >
-                        <br>
-                        <h3 class="home-heading">{{curso.nombre}} </h3> 
-                        
-                        {{curso.tipo}}
-                        style="width:20%"
-                        -->
-                        <table>
+                      <a href="#!detalleCurso/{{curso.id}}" style="width: 100%;">
+                      
+                        <table style=" width: 100%;">
                           <tr >
-                            <td width="20%"><img src="./images/facebook.png" width="50px" height="50px" alt=""></td>
-                            <td class="pad" width="80%" style="text-align: center;background-color: lightblue;"> {{curso.nombre}} </td>
+                            <td width="20%" rowspan="2"><img src="./images/facebook.png" width="50px" height="50px" alt=""></td>
+                            <td class="pad" width="80%" style="text-align: justify;color: black;"> {{curso.nombre}} </td>
                            
+                          </tr>
+                          <tr>
+                            <td class="pad" width="80%" style="text-align: center;color: gray"> Descripcion </td>
                           </tr>
                           
                         </table>
@@ -32,21 +26,19 @@
                       </a> 
                     </li>
                 </ul> 
-           
+                <div> 
+                    <h6>Redes Sociales</h6>
+                    <a ng-click="redireccionarFa()" ><img src="./images/facebook.png" width="50px" height="50px" alt=""></a>
+                    <a ng-click="redireccionarTw()" ><img src="./images/twitter.png" width="50px" height="50px" alt=""></a>
+                    <a ng-click="redireccionarYou()" ><img src="./images/youtube.png" width="50px" height="50px" alt=""></a>
+                    <a ng-click="redireccionarWat()" ><img src="./images/Whatsapp.png" width="50px" height="50px" alt=""></a>
+                    <a ng-click="redireccionarMap()" ><img src="./images/maps2.jpg" width="50px" height="50px" alt=""></a>
+                </div>
 
         </div>
      
       
-      <div class="list-group-item list-group-item-home">
-          <h6>Redes Sociales</h6>
-          <a ng-click="redireccionarFa()" ><img src="./images/facebook.png" width="50px" height="50px" alt=""></a>
-          <a ng-click="redireccionarTw()" ><img src="./images/twitter.png" width="50px" height="50px" alt=""></a>
-          <a ng-click="redireccionarYou()" ><img src="./images/youtube.png" width="50px" height="50px" alt=""></a>
-          <a ng-click="redireccionarWat()" ><img src="./images/Whatsapp.png" width="50px" height="50px" alt=""></a>
-          <a ng-click="redireccionarMap()" ><img src="./images/maps2.jpg" width="50px" height="50px" alt=""></a>
-          
-      </div>
-
+      
       
       </div>
     </div>

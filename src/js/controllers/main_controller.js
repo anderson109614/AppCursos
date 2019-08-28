@@ -1,12 +1,14 @@
 angular.module('AppCursos.controllers.Main', [])
 
+
   .controller('MainController', function ($scope, $http) {
-    $http.get('http://10.7.3.107/ServicioPrueba/servicio.php').
+    ///
+    desblo();
+    ///
+    $http.get('http://10.7.2.89/ServicioPrueba/servicio.php').
         then(function(response) {
             $scope.cursos = response.data;
     });
-
-
 
     $scope.Ui.turnOn('modalemployers');
 
@@ -18,8 +20,6 @@ angular.module('AppCursos.controllers.Main', [])
     };
     $scope.redireccionarYou= function () {
       openBrowser('https://www.youtube.com/channel/UCFqeEryqQGQCN_luvz6ipQg');
-      //
-      //
     };
     $scope.redireccionarWat= function () {
      openBrowser('https://wa.me/+593998918159');
@@ -29,9 +29,23 @@ angular.module('AppCursos.controllers.Main', [])
       openBrowser('https://goo.gl/maps/bPjE6dmSSHHhTmEw9');
       //cordova.plugins.Whatsapp.send("1112223333");
      };
-     desblo();
+     
      
   });
+  var t;
+  var po=0;
+  function timeout() {
+    t = setTimeout(function() {
+      document.getElementById("aumenta").style.width=(po+2)+"%";
+      po=po+2;
+      if(po<100){
+        timeout();
+      }
+      
+    }, 50);
+   
+   // console.log(po);
+  }
 
 function desblo(){
   var b= document.getElementById("bloquea");
@@ -44,6 +58,7 @@ function desblo(){
   //b2.style.display="none";
   //setTimeout("des()",1000);
   setTimeout("des()", 2000);
+  timeout();
   //b.style.display="none";
     //b2.style.display="none";
   
