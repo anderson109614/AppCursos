@@ -1,11 +1,11 @@
 <div class="scrollable ng-scope" style="background-color: white;">
   <div class="scrollable-content">
-    <div class="list-group text-center">
+    <div class="list-group text-center" style="height: 100%">
       
-      <div class="list-group-item list-group-item-home">
+      <div class="list-group-item list-group-item-home" style="height: 100%">
           <!--Cursos-->
           <img src="./images/head.jpg" width="100%" alt="">
-           <ul class="list-group text-center">
+           <ul class="list-group text-center" style="height: 100%">
 
                     <li ng-repeat="curso in cursos | filter:nombre" class="list-group-item list-group-item-home">
                       <a href="#!detalleCurso/{{curso.id}}" style="width: 100%;">
@@ -13,11 +13,11 @@
                         <table style=" width: 100%;">
                           <tr >
                             <td width="20%" rowspan="2"><img src="./images/facebook.png" width="50px" height="50px" alt=""></td>
-                            <td class="pad" width="80%" style="text-align: justify;color: black;"> {{curso.nombre}} </td>
+                            <td class="pad" width="80%" style="text-align: left;color: black;"> {{curso.nombre}} </td>
                            
                           </tr>
                           <tr>
-                            <td class="pad" width="80%" style="text-align: center;color: gray"> Descripcion </td>
+                            <td class="pad" width="80%" style="text-align:left;color: gray"> Descripcion </td>
                           </tr>
                           
                         </table>

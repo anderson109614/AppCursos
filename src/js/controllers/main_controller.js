@@ -5,7 +5,7 @@ angular.module('AppCursos.controllers.Main', [])
     ///
     desblo();
     ///
-    $http.get('http://10.7.2.89/ServicioPrueba/servicio.php').
+    $http.get('http://10.7.1.209/ServicioPrueba/servicio.php').
         then(function(response) {
             $scope.cursos = response.data;
     });
