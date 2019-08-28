@@ -1,0 +1,40 @@
+{
+  "_from": "git+https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git",
+  "_id": "mobi.moica.whatsapp@0.0.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/mobi.moica.whatsapp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git",
+    "rawSpec": "https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git",
+    "saveSpec": "git+https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git",
+    "fetchSpec": "https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git#8a94fee537b81f0022199334ac2880203c9f8561",
+  "_spec": "https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git",
+  "_where": "C:\\PasantiasDADV\\aplicaciones\\AppCursos",
+  "bundleDependencies": false,
+  "cordova_name": "Whatsapp",
+  "deprecated": false,
+  "description": "Whatsapp Plugin",
+  "engines": [],
+  "issue": "https://github.com/ranjitpandit/whatsapp-phonegap-plugin/issues",
+  "keywords": [
+    "whatsapp"
+  ],
+  "license": "MIT",
+  "name": "mobi.moica.whatsapp",
+  "platforms": [
+    "android",
+    "ios"
+  ],
+  "repo": "https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git",
+  "version": "0.0.1"
+}

@@ -1,0 +1,64 @@
+{
+  "_from": "cordova-plugin-internet-status",
+  "_id": "cordova-plugin-internet-status@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-ONoHNkfZmerwFJmS6roTstTwxlrAmIWrbucWGtcpUboZpVo9BBqZNUIL+vMfW9aPhqmyhDfQ7oCo/pfGTPPYcA==",
+  "_location": "/cordova-plugin-internet-status",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-internet-status",
+    "name": "cordova-plugin-internet-status",
+    "escapedName": "cordova-plugin-internet-status",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-internet-status/-/cordova-plugin-internet-status-1.0.1.tgz",
+  "_shasum": "3123cd84da3d0d1b5d3d9d660e7499b045948fe0",
+  "_spec": "cordova-plugin-internet-status",
+  "_where": "C:\\PasantiasDADV\\aplicaciones\\AppCursos",
+  "author": {
+    "name": "slkerndnme"
+  },
+  "bugs": {
+    "url": "https://github.com/slkerndnme/cordova-plugin-internet-status/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-internet-status",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Plugin Internet Status",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.6.0"
+    }
+  ],
+  "homepage": "https://github.com/slkerndnme/cordova-plugin-internet-status#readme",
+  "keywords": [
+    "cordova",
+    "network",
+    "internet",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-internet-status",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slkerndnme/cordova-plugin-internet-status.git"
+  },
+  "version": "1.0.1"
+}

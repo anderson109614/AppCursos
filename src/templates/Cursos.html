@@ -1,0 +1,19 @@
+<div class="scrollable ng-scope">
+        <div class="scrollable-content">
+           
+                <ul class="list-group text-center">
+                    <li ng-repeat="curso in cursos | filter:nombre" class="list-group-item list-group-item-home">
+                      <a href="#!detalleCurso/{{curso.id}}">
+                        <br>
+                        <img src="{{curso.img}}" alt="{{curso.nombre}}" class="card-img-top" >
+                        <br>
+                        <h3 class="home-heading">{{curso.nombre}} </h3> 
+                        
+                        {{curso.tipo}}
+                        
+                      </a> 
+                    </li>
+                </ul>
+            
+        </div>
+      </div>

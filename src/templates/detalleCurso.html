@@ -1,0 +1,127 @@
+<div class="scrollable ng-scope">
+        <div class="scrollable-content">
+                <div class="section">
+                        <h3 class="page-header">{{curso.nombre}}</h3>
+                        <button ng-click="redireccionar()" class="btn btn-outline-primary">Inscribete</button>
+                        <br>
+                        <br>
+                        <div ui-state="activeTab" default="1">
+                                <ul class="nav nav-tabs">
+                                  <li ui-class="{'active': activeTab == 1}">
+                                    <a ui-set="{'activeTab': 1}">General</a>
+                                  </li>
+                                  <li ui-class="{'active': activeTab == 2}">
+                                    <a ui-set="{'activeTab': 2}">Contenido</a>
+                                  </li>
+                                  <li ui-class="{'active': activeTab == 3}">
+                                    <a ui-set="{'activeTab': 3}">Aspectos a Considerar</a>
+                                  </li>
+                                </ul>
+                              
+                                <div ui-if="activeTab == 1">
+                                  <!--Tab del general-->
+                                  <h5>{{curso.Descripcion}}</h5>
+                                 
+                                    
+                                    
+                                  <table class="table  table-striped">
+                                      <tr>
+                                          <td>
+                                               <b> MATRICULAS</b>
+                                          </td>
+                                          <td>
+                                                  <h5>{{curso.Matriculas}}</h5>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <b> INICIO</b>
+                                                  
+                                          </td>
+                                          <td>
+                                             <h5> {{curso.Inicio}}</h5>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                              <b> FINALIZA</b>
+                                          </td>
+                                          <td>
+                                             <h4> {{curso.Finaliza}}</h4>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                            <td>
+                                              <b> MODALIDAD</b>
+                                            </td>
+                                            <td>
+                                               <h5> {{curso.Modalidad}}</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>DURACION</b>
+                                             </td>
+                                             <td>
+                                                 <h5> {{curso.Duracion}}</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                  <b> INVERCION</b>
+                                            </td>
+                                            <td>
+                                                 <h5> {{curso.Invercion}}</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b> INSTRUCTOR </b>
+                                             </td>
+                                             <td>
+                                               <h5> {{curso.Instructor}}</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                   <b>  NOTA </b>
+                                                 </td>
+                                                 <td>
+                                                  <h5>  {{curso.Nota}}</h5>
+                                                </td>
+                                        </tr>
+                                  </table>
+                                  <p ><b> Requisitos:</b> <h5> {{curso.Requisitos}}</h5></p>
+                                  <p><b> Dirigido a:</b>  <h5>{{curso.Dirigido}}</h5> </p>
+                                  <p><b> Forma de Pago:</b> <h5> {{curso.FormaPago}}</h5> </p>
+                                  <p><b> Certificación:</b> <h5> {{curso.Certificacion}}</h5></p>
+                                  <p><b> Contacto:</b> <h5>{{curso.Contacto}}</h5> </p>
+                                </div>
+                              
+                                <div ui-if="activeTab == 2">
+                                        <ul class="list-group">
+                                                <li ng-repeat="unidad in unidades | filter:Unidad" class="list-group-item list-group-item-home">
+                                                  <p><b>{{unidad.Unidad}}:</b> <h5>{{unidad.Contenido}}</h5>  </p> 
+                                                </li>
+                                            </ul>
+                                    
+
+
+                                </div>
+                              
+                                <div ui-if="activeTab == 3">
+                                        <ul class="list-group">
+                                                <li ng-repeat="aspecto in aspectos | filter:Unidad" class="list-group-item list-group-item-home">
+                                                  <p><h5>{{aspecto.Descripcion}}</h5>  </p> 
+                                                </li>
+                                            </ul>
+
+
+
+                                </div>
+                        </div>
+                </div>
+                
+
+        </div>
+</div>
