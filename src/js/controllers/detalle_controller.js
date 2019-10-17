@@ -2,7 +2,7 @@ angular.module('AppCursos.controllers.Detalle', [])
 
 .controller('DetalleController', function($scope,$routeParams,$http){
   
-$http.get('http://10.7.2.229/ServicioPrueba/servicio.php?id='+$routeParams.cursoID).
+$http.get('http://localhost/ServicioPrueba/servicio.php?id='+$routeParams.cursoID).
 then(function(response) {
     $scope.curso = response.data;
 });
