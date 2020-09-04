@@ -53,7 +53,7 @@
     "cordova-plugin-file": "~4.3.3",
     "cordova-plugin-geolocation": "~2.4.3",
     "cordova-plugin-globalization": "~1.0.7",
-    "cordova-plugin-inappbrowser": "~1.7.1",
+    "cordova-plugin-inappbrowser": "~3.1.0",
     "cordova-plugin-internet-status": "1.0.1",
     "cordova-plugin-media-capture": "~1.4.3",
     "cordova-plugin-network-information": "2.0.2",
